@@ -1,0 +1,125 @@
+table, tr, th, td {
+    font-family: 'Arvo', serif;
+    font-size:15px;
+    color:#777777;
+	border:1px;
+	border-color:#777777;
+	text-align:center;
+}
+
+body {
+background-image:url('background.jpg');
+background-attachment:fixed;
+}
+
+#gdf img{
+position:absolute;
+right:10px;
+top:10px;
+width:100px;
+height:100px;
+}
+#top-menu1 {
+background-color:white;
+width: 500px;
+box-shadow:0px 0px 10px black;
+border-radius: 20px;
+}
+#top-menu, #top-menu ul {
+    padding: 0;
+    margin: 0 ;
+    list-style: none;
+}
+#top-menu {
+    text-align: center;
+}
+#top-menu li {
+    margin:10px;
+    display: inline-block;
+}
+#top-menu a {
+    font-family:oswald;
+    font-size:16px;
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+#top-menu a:hover {
+    text-decoration: none;
+    display: block;
+    color:white;
+    text-shadow:0px 0px 3px black;
+}
+header {
+text-align: center;
+
+}
+header h1 {
+margin:30px 0px 0px 0px;
+color:white;
+text-shadow:0px 0px 5px black;
+font-family: 'Dancing Script', cursive;
+font-size:100px;
+margin-bottom: 0px;
+
+}
+header p {
+margin:0px 0px 50px 0px;
+font-family: 'Dancing Script', cursive;
+font-style:italic;
+font-size:25px;
+margin-top: 0px;
+}
+#content {
+background-color:white;
+width: 1000px;
+box-shadow:0px 0px 10px black;
+border-radius: 20px;
+margin:50px;
+text-align:left;
+}
+#intro h1 {
+    font-family: 'Patua One', cursive;
+    font-size:25px;
+    padding:30px 30px 0px 30px;
+}
+#intro p {
+    font-family: 'Arvo', serif;
+    font-size:15px;
+    padding:10px 10px 10px 50px;
+    color:#777777;
+    display: inline-block;
+    width:680px;
+}
+#content p {
+    font-family: 'Arvo', serif;
+    font-size:15px;
+    color:#777777;
+    padding:10px 50px 50px 50px;
+}
+#menu2 {
+display: inline-block;
+vertical-align:top;
+}
+#menu2 a {
+ font-family: 'Arvo', serif;
+ font-size:13px;
+}
+#menu2 ul {
+margin:20px -30px;
+}
+h1 {
+    font-family: 'Patua One', cursive;
+    font-size:25px;
+    padding:0px 30px 0px 30px;
+}
+#intro h2 {
+    font-family: 'Patua One', cursive;
+    font-size:20px;
+    text-align:center;
+}
+#content img {
+margin:0px 0px 10px 10px;
+padding:10px;
+box-shadow:0px 0px 5px black;
+}
