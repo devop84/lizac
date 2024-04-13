@@ -44,17 +44,17 @@
 
 <center>
   <header>
-    <a style="text-decoration:none;" href="index.php"><h1 style="text-decoration:none;">Lizac</h1></a>
+    <a style="text-decoration:none;" href="index.html"><h1 style="text-decoration:none;">Lizac</h1></a>
     <p>Maison de Vacances !</p>
   </header>
 
   <nav id="top-menu1">
           <ul id="top-menu">
-                <li><a href="index.php?p=presentation.php">Presentation</a></li>
+                <li><a href="index.php?p=presentation.html">Presentation</a></li>
 
-                <li><a href="index.php?p=accessibilite.php">Accessibilite & Contacts</a></li>
+                <li><a href="index.php?p=accessibilite.html">Accessibilite & Contacts</a></li>
 
-                <li><a href="index.php?p=tarifs.php">Dates & Tarifs</a></li>
+                <li><a href="index.php?p=tarifs.html">Dates & Tarifs</a></li>
          </ul>
   </nav>
 
@@ -63,13 +63,13 @@
 
 <?php
 
-if(isset($_GET['p']) AND (($_GET['p'] == 'presentation.php'))) include $_GET['p'];
+if(isset($_GET['p']) AND (($_GET['p'] == 'presentation.html'))) include $_GET['p'];
 
-elseif(isset($_GET['p']) AND (($_GET['p'] == 'accessibilite.php'))) include $_GET['p'];
+elseif(isset($_GET['p']) AND (($_GET['p'] == 'accessibilite.html'))) include $_GET['p'];
 
-elseif(isset($_GET['p']) AND (($_GET['p'] == 'tarifs.php'))) include $_GET['p'];
+elseif(isset($_GET['p']) AND (($_GET['p'] == 'tarifs.html'))) include $_GET['p'];
 
-else include 'presentation.php';
+else include 'presentation.html';
 
 ?>
   
