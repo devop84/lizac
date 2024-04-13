@@ -50,11 +50,11 @@
 
   <nav id="top-menu1">
           <ul id="top-menu">
-                <li><a href="index.html?p=presentation.html">Presentation</a></li>
+                <li><a href="index.html?p=presentation.php">Presentation</a></li>
 
-                <li><a href="index.html?p=accessibilite.html">Accessibilite & Contacts</a></li>
+                <li><a href="index.html?p=accessibilite.php">Accessibilite & Contacts</a></li>
 
-                <li><a href="index.html?p=tarifs.html">Dates & Tarifs</a></li>
+                <li><a href="index.html?p=tarifs.php">Dates & Tarifs</a></li>
          </ul>
   </nav>
 
@@ -63,13 +63,13 @@
 
 <?php
 
-if(isset($_GET['p']) AND (($_GET['p'] == 'presentation.html'))) include $_GET['p'];
+if(isset($_GET['p']) AND (($_GET['p'] == 'presentation.php'))) include $_GET['p'];
 
-elseif(isset($_GET['p']) AND (($_GET['p'] == 'accessibilite.html'))) include $_GET['p'];
+elseif(isset($_GET['p']) AND (($_GET['p'] == 'accessibilite.php'))) include $_GET['p'];
 
-elseif(isset($_GET['p']) AND (($_GET['p'] == 'tarifs.html'))) include $_GET['p'];
+elseif(isset($_GET['p']) AND (($_GET['p'] == 'tarifs.php'))) include $_GET['p'];
 
-else include 'presentation.html';
+else include 'presentation.php';
 
 ?>
   
