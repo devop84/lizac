@@ -50,32 +50,56 @@
 
   <nav id="top-menu1">
           <ul id="top-menu">
-                <li><a href="index.html?p=presentation.php">Presentation</a></li>
+                <li><a href="index.html?p=presentation.html">Presentation</a></li>
 
-                <li><a href="index.html?p=accessibilite.php">Accessibilite & Contacts</a></li>
+                <li><a href="index.html?p=accessibilite.html">Accessibilite & Contacts</a></li>
 
-                <li><a href="index.html?p=tarifs.php">Dates & Tarifs</a></li>
+                <li><a href="index.html?p=tarifs.html">Dates & Tarifs</a></li>
          </ul>
   </nav>
 
   <div id="content">
 
 
-<?php
-
-if(isset($_GET['p']) AND (($_GET['p'] == 'presentation.php'))) include $_GET['p'];
-
-elseif(isset($_GET['p']) AND (($_GET['p'] == 'accessibilite.php'))) include $_GET['p'];
-
-elseif(isset($_GET['p']) AND (($_GET['p'] == 'tarifs.php'))) include $_GET['p'];
-
-else include 'presentation.php';
-
-?>
-  
-
 
 </div>
+
+<script>
+  // Function to get a parameter value from the URL
+  function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Get the value of the 'include' parameter from the URL
+  var includeFile = getParameterByName('include');
+
+  // If 'include' parameter is present, load the corresponding HTML file
+  if (includeFile) {
+      // Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      // Set up the request
+      xhr.open('GET', includeFile, true);
+
+      // Define what happens on successful data submission
+      xhr.onload = function () {
+          // Check if request was successful
+          if (xhr.status >= 200 && xhr.status < 300) {
+              // Insert the received HTML into the content div
+              document.getElementById('content').innerHTML = xhr.responseText;
+          }
+      };
+
+      // Send the request
+      xhr.send();
+  }
+</script>
   </center>
 </body>
 <div style="font-size:x-small; font-family:verdana;">
